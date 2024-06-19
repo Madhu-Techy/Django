@@ -7,10 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .navbar {
-            background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+            background: linear-gradient(to bottom, #444444 5%, #222222 50%, black 100%) !important;
         }
         .navbar-brand img {
-            height: 50px; /* Adjust the height as needed */
+            height: 60px;
+            width:80px;
+            margin-top: -5px;
+            margin-left:
+            
         }
         .nav-link {
             font-size: 18px; /* Adjust the font size as needed */
@@ -21,7 +25,8 @@
             color: #fff !important; /* White color on hover */
         }
         .profile-icon {
-            height: 40px; /* Adjust the height as needed */
+            height: 50px;
+            margin-top: -10px; /* Adjust the height as needed */
         }
         .navbar-nav {
             margin-left: auto; /* Move the navbar items to the right */
@@ -66,11 +71,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
-                    <li class="nav-item dropdown profile-nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">
                             <img src="{% static 'Images/profile.png' %}" alt="Profile" class="profile-icon">
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="view_profile.html">View Profile</a></li>
                             <li><a class="dropdown-item" href="login.html">Login</a></li>
                             <li><a class="dropdown-item" href="signup.html">Signup</a></li>
