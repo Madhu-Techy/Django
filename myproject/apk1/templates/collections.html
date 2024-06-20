@@ -9,10 +9,10 @@
         <div class="col-md-12">
             <h1>Categories</h1>
             {% include 'inc/slider.html' %}
-            <hr>
+            <hr class="custom-hr">
             <div class="grid-container">
                 {% for item in category %}
-                <div class="grid-item {% cycle 'large' 'small' 'medium' %}">
+                <div class="grid-item {% cycle 'large' 'smaller' 'small' 'medium' %}">
                     <div class="card h-100">
                         <a href="{% url 'collectionsview' item.slug %}">
                             <img src="{{ item.image.url }}" class="card-img-top" alt="{{ item.name }}">
