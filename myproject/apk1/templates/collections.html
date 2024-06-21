@@ -3,12 +3,17 @@
 {% load static %}
 
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
-<div class="container">
-    <div class="row">
+<div class="container-fluid"> <!-- Changed container to container-fluid -->
+    <div class="row no-gutters"> <!-- Added no-gutters class to remove margins/paddings -->
         <div class="col-md-12">
+<<<<<<< HEAD
             <h1>Ca</h1>
             {% include 'inc/slider.html' %}
+=======
+>>>>>>> e7878d1127f1c0a3b1323dc3c4b4b82935fd6282
             <hr class="custom-hr">
+            {% include 'inc/slider.html' %}
+            
             <div class="grid-container">
                 {% for item in category %}
                 <div class="grid-item {% cycle 'large' 'smaller' 'small' 'medium' %}">
