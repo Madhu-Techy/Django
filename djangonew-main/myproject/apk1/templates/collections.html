@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block content %}
+<!--<div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="static/images/banner1.jpg" class="img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block top-left-caption">
+            <dt class="col-sm-3">
+                <h1 class="high-light">6ixty
+                    <small class="text-body-secondary">wings</small>
+                </h1>
+                    <figcaption class="blockquote-footer">
+                        taste the difference <cite title="Source Title"></cite>
+                    </figcaption>
+                    <p>A well-known quote, contained in a blockquote element.</p>
+            </dt>
+        </div>
+    </div>
+</div>-->
+
+
+    <div class="card" style="border:none;">
+        <img src="static/images/banner1.jpg" class="card-img" alt="demo">
+        <div class="card-img-overlay">
+            <div class="card-body text-light" style="padding:20px 0 0 80px;">
+                <p class="card-title display-1 font-weight-bolder" ><h1 class="high-light">6ixty
+                    <small class="text-body-secondary" style="-webkit-text-stroke: 1px white;">wings</small>
+                </h1></p>
+                <p class="card-subtitle display-4 font-weight-bolder"><figcaption class="blockquote-footer" style="font-size: 2.2em;">taste the difference</figcaption></p>
+                <p class="card-text">A well-known quote, contained in a blockquote element.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<figure class="text-center">
+    <blockquote class="blockquote">
+        <p>A well-known quote, contained in a blockquote element.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+    </figcaption>
+</figure>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <figure class="text-center">
+                <h1>Menu</h1>
+            </figure>
+            <hr>
+            <div class="row">
+                {% for item in category %}
+                <div class="col-md-4 mb-4 d-flex align-items-stretch">
+                    <div class="card h-100">
+                        <a href="{% url 'collectionsview' item.slug %}">
+                            <img src="{{ item.image.url }}" class="card-img-top" alt="Category Image">
+                        </a>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">{{ item.name }}</h5>
+                            <p class="card-text flex-grow-1">{{ item.description }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
