@@ -17,7 +17,7 @@
     
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 25px;
+    gap: 27px;
 
    
 }
@@ -65,12 +65,12 @@
 
 }
 .grid-item.large .card-img-top {
-    height: 450px;
+    height: 320px;
     
     
 }
 .grid-item.medium .card-img-top {
-    height: 300px;
+    height: 230px;
    
     
 }
@@ -79,7 +79,7 @@
     
 }
 .grid-item.smaller .card-img-top {
-    height: 120px;
+    height: 140px;
    
 }
 
@@ -105,17 +105,8 @@
 .card-title {
     margin: 0;
     font-size: 20px;
-    color: white;
+    color:white;
     
 
-}
+} 
 
-.container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.row.no-gutters {
-    margin-left: 0;
-    margin-right: 0;
-}
